@@ -21,10 +21,10 @@ const Stack = createStackNavigator();
 const App: () => React$Node = () => {
   return (
     <NavigationContainer>
-      <Stack.Screen name="Main" component={MainScreen} />
-      <Stack.Screen name="SignUp" component={SignUpScreen} />
-      <Stack.Screen name="Login" component={LoginScreen} />
       <Stack.Navigator initialRouteName="Splash">
+        <Stack.Screen name="Main" component={MainScreen} />
+        <Stack.Screen name="SignUp" component={SignUpScreen} />
+        <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen 
           name="Splash" 
           component={SplashScreen} 
